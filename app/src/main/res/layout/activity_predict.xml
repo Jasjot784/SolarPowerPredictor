@@ -15,7 +15,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="10dp"
-        android:hint="Temperature(in SI)"
+        android:inputType="numberDecimal"
+        android:hint="Temperature(in Celsius)"
         android:lines="1"
         app:layout_constraintTop_toTopOf="parent"/>
 
@@ -25,6 +26,7 @@
         android:layout_height="wrap_content"
         android:layout_margin="10dp"
         android:hint="Humidity(in SI)"
+        android:inputType="numberDecimal"
         android:lines="1"
         app:layout_constraintTop_toBottomOf="@id/etTemp"/>
 
@@ -33,6 +35,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="10dp"
+        android:inputType="numberDecimal"
         android:hint="Pressure(in SI)"
         android:lines="1"
         app:layout_constraintTop_toBottomOf="@id/etHumid"/>
@@ -42,6 +45,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="10dp"
+        android:inputType="numberDecimal"
         android:hint="Total Cloud Cover(in SI)"
         android:lines="1"
         app:layout_constraintTop_toBottomOf="@id/etPressure"/>
@@ -51,6 +55,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="10dp"
+        android:inputType="numberDecimal"
         android:hint="Medium Cloud Cover (in SI)"
         android:lines="1"
         app:layout_constraintTop_toBottomOf="@id/etCloudCover"/>
@@ -60,6 +65,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="10dp"
+        android:inputType="numberDecimal"
         android:hint="Shortwave Radiation(in SI)"
         android:lines="1"
         app:layout_constraintTop_toBottomOf="@id/etMediumCloud"/>
@@ -69,6 +75,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="10dp"
+        android:inputType="numberDecimal"
         android:hint="Wind speed(80m above ground)"
         android:lines="1"
         app:layout_constraintTop_toBottomOf="@id/etShortWaveRadiation"/>
@@ -78,6 +85,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="10dp"
+        android:inputType="numberDecimal"
         android:hint="Wind Speed(900m above ground)"
         android:lines="1"
         app:layout_constraintTop_toBottomOf="@id/etWindSpeed80"/>
@@ -87,6 +95,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="10dp"
+        android:inputType="numberDecimal"
         android:hint="Angle of Incidence(in SI)"
         android:lines="1"
         app:layout_constraintTop_toBottomOf="@id/etWindSpeed900"/>
@@ -96,6 +105,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="10dp"
+        android:inputType="numberDecimal"
         android:hint="Zenith(in SI)"
         android:lines="1"
         app:layout_constraintTop_toBottomOf="@id/etIncidence"/>
@@ -105,6 +115,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="10dp"
+        android:inputType="numberDecimal"
         android:hint="Azimuth(in SI)"
         android:lines="1"
         app:layout_constraintTop_toBottomOf="@id/etZenith"/>
