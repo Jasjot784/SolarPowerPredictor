@@ -1,10 +1,125 @@
 <?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="#00ffff"
+    android:layout_height="wrap_content"
+    android:background="#b2ffff"
     tools:context=".PredictActivity">
 
+    <EditText
+        android:id="@+id/etTemp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:hint="Temperature(in SI)"
+        android:lines="1"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <EditText
+        android:id="@+id/etHumid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:hint="Humidity(in SI)"
+        android:lines="1"
+        app:layout_constraintTop_toBottomOf="@id/etTemp"/>
+
+    <EditText
+        android:id="@+id/etPressure"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:hint="Pressure(in SI)"
+        android:lines="1"
+        app:layout_constraintTop_toBottomOf="@id/etHumid"/>
+
+    <EditText
+        android:id="@+id/etCloudCover"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:hint="Total Cloud Cover(in SI)"
+        android:lines="1"
+        app:layout_constraintTop_toBottomOf="@id/etPressure"/>
+
+    <EditText
+        android:id="@+id/etMediumCloud"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:hint="Medium Cloud Cover (in SI)"
+        android:lines="1"
+        app:layout_constraintTop_toBottomOf="@id/etCloudCover"/>
+
+    <EditText
+        android:id="@+id/etShortWaveRadiation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:hint="Shortwave Radiation(in SI)"
+        android:lines="1"
+        app:layout_constraintTop_toBottomOf="@id/etMediumCloud"/>
+
+    <EditText
+        android:id="@+id/etWindSpeed80"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:hint="Wind speed(80m above ground)"
+        android:lines="1"
+        app:layout_constraintTop_toBottomOf="@id/etShortWaveRadiation"/>
+
+    <EditText
+        android:id="@+id/etWindSpeed900"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:hint="Wind Speed(900m above ground)"
+        android:lines="1"
+        app:layout_constraintTop_toBottomOf="@id/etWindSpeed80"/>
+
+    <EditText
+        android:id="@+id/etIncidence"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:hint="Angle of Incidence(in SI)"
+        android:lines="1"
+        app:layout_constraintTop_toBottomOf="@id/etWindSpeed900"/>
+
+    <EditText
+        android:id="@+id/etZenith"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:hint="Zenith(in SI)"
+        android:lines="1"
+        app:layout_constraintTop_toBottomOf="@id/etIncidence"/>
+
+    <EditText
+        android:id="@+id/etAzimuth"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:hint="Azimuth(in SI)"
+        android:lines="1"
+        app:layout_constraintTop_toBottomOf="@id/etZenith"/>
+
+    <Button
+        android:id="@+id/buttonPredict"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="@string/predict"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/etAzimuth"
+        android:background="@color/colorPrimary"/>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
