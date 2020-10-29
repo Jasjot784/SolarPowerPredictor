@@ -9,52 +9,108 @@
 
 
     <androidx.cardview.widget.CardView
-        android:id="@+id/card1"
+        android:id="@+id/cardCompare"
         android:layout_width="150dp"
         android:layout_height="150dp"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         android:layout_marginTop="40dp"
         app:cardBackgroundColor="#ffff00"
-        app:layout_constraintEnd_toStartOf="@id/card2"
+        app:layout_constraintEnd_toStartOf="@id/cardPredict"
         app:cardCornerRadius="25dp"
-        app:cardElevation="16dp"/>
+        app:cardElevation="16dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/ic_compare"
+            android:layout_gravity="center"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/compare"
+            android:textSize="24sp"
+            android:textColor="@android:color/black"
+            android:textStyle="bold"
+            android:gravity="center"/></LinearLayout>
+    </androidx.cardview.widget.CardView>
 
     <androidx.cardview.widget.CardView
-        android:id="@+id/card2"
+        android:id="@+id/cardPredict"
         android:layout_width="150dp"
         android:layout_height="150dp"
         app:layout_constraintTop_toTopOf="parent"
         android:layout_marginTop="40dp"
-        app:layout_constraintStart_toEndOf="@id/card1"
+        app:layout_constraintStart_toEndOf="@id/cardCompare"
         app:layout_constraintEnd_toEndOf="parent"
         app:cardBackgroundColor="#ffff00"
         app:cardCornerRadius="25dp"
         app:cardElevation="16dp">
-
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <ImageView
+                android:layout_marginTop="10dp"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/ic_trends"
+                android:layout_gravity="center"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/predict"
+                android:textSize="24sp"
+                android:textColor="@android:color/black"
+                android:textStyle="bold"
+                android:gravity="center"/>
+        </LinearLayout>
     </androidx.cardview.widget.CardView>
 
     <androidx.cardview.widget.CardView
         android:id="@+id/card3"
         android:layout_width="150dp"
         android:layout_height="150dp"
-        app:layout_constraintTop_toBottomOf="@id/card1"
+        app:layout_constraintTop_toBottomOf="@id/cardCompare"
         app:layout_constraintStart_toStartOf="parent"
         android:layout_marginTop="40dp"
         app:cardBackgroundColor="#ffff00"
-        app:layout_constraintEnd_toStartOf="@id/card4"
+        app:layout_constraintEnd_toStartOf="@id/cardCall"
         app:cardCornerRadius="25dp"
         app:cardElevation="16dp"/>
 
     <androidx.cardview.widget.CardView
-        android:id="@+id/card4"
+        android:id="@+id/cardCall"
         android:layout_width="150dp"
         android:layout_height="150dp"
-        app:layout_constraintTop_toBottomOf="@id/card2"
+        app:layout_constraintTop_toBottomOf="@id/cardPredict"
         android:layout_marginTop="40dp"
         app:layout_constraintStart_toEndOf="@id/card3"
         app:layout_constraintEnd_toEndOf="parent"
         app:cardBackgroundColor="#ffff00"
         app:cardCornerRadius="25dp"
-        app:cardElevation="16dp"/>
+        app:cardElevation="16dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/ic_baseline_call_24"
+                android:layout_gravity="center"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/call_us"
+                android:textSize="24sp"
+                android:textColor="@android:color/black"
+                android:textStyle="bold"
+                android:gravity="center"/>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
 </androidx.constraintlayout.widget.ConstraintLayout>
