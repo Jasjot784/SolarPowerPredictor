@@ -30,4 +30,7 @@ dependencies {
     androidTestImplementation 'androidx.test.ext:junit:1.1.2'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
 
+    //splash animation
+    implementation 'me.wangyuwei:ParticleView:1.0.4'
+
 }
