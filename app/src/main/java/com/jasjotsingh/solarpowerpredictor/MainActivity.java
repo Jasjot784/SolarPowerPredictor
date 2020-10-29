@@ -39,5 +39,6 @@ public class MainActivity extends AppCompatActivity implements ParticleView.Part
     public void onAnimationEnd() {
         Intent intent = new Intent(this,DashboardActivity.class);
         startActivity(intent);
+        finish();
     }
 }
