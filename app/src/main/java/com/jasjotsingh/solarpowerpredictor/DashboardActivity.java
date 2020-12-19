@@ -2,6 +2,7 @@ package com.jasjotsingh.solarpowerpredictor;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.cardview.widget.CardView;
+import androidx.core.app.ShareCompat;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -45,7 +46,27 @@ public class DashboardActivity extends AppCompatActivity implements View.OnClick
                 startActivity(intentAbout);
                 break;
             case R.id.cardShare:
-                displayToast("You clicked share");
+                String mimeType = "text/plain";
+                ShareCompat.IntentBuilder
+                        .from(this)
+                        .setType(mimeType)
+                        .setChooserTitle("Share result with")
+                        .setText("Temperature = 20\n" +
+                                "Humidity = 15.552\n" +
+                                "Pressure = 1500.64\n" +
+                                "Total Cloud Cover = 210\n" +
+                                "Medium Cloud Cover = 150\n" +
+                                "Shortwave Radiation = 54.21\n" +
+                                "Wind Speed(80m above ground) = 65.21\n" +
+                                "Wind Speed(900m above ground) = 45.45\n" +
+                                "Angle of incidence = 15 degree\n" +
+                                "Zenith = 201\n" +
+                                "Azimuth = 30\n" +
+                                "\n" +
+                                "Predicted Power Output = 5.3331 kW\n" +
+                                "\n" +
+                                "For more info go to - https://github.com/Jasjot784/SolarPowerPredictor")
+                        .startChooser();
                 break;
             case R.id.cardCompare:
                 displayToast("You clicked Compare");
