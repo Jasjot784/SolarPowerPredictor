@@ -41,7 +41,8 @@ public class DashboardActivity extends AppCompatActivity implements View.OnClick
                 startActivity(intent);
                 break;
             case R.id.cardAbout:
-                displayToast("You clicked about");
+                Intent intentAbout = new Intent(DashboardActivity.this,AboutActivity.class);
+                startActivity(intentAbout);
                 break;
             case R.id.cardShare:
                 displayToast("You clicked share");

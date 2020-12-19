@@ -5,4 +5,36 @@
     <string name="call_us">Call Us</string>
     <string name="about">About</string>
     <string name="share">Share</string>
+
+    <string-array name="title">
+        <item>Akhil Goel</item>
+        <item>Jasjot Singh</item>
+        <item>Shivangi Goyal</item>
+        <item>Sparsh Gupta</item>
+        <item>Rahul Mahawar</item>
+    </string-array>
+
+    <string-array name="info">
+        <item>Contributions in website UI and UX development,Machine Learning Algorithm and Backend APIs development</item>
+        <item>Contributions in Android UI and UX development and Machine Learning Algorithm development</item>
+        <item>Contributions in website UI and UX development and Backend APIs development</item>
+        <item>Contributions in Machine Learning Algorithm and Backend APIs development</item>
+        <item>Contributions in Android UI and UX development</item>
+    </string-array>
+
+    <string-array name="email">
+        <item>Email: akhilgoeljan@gmail.com</item>
+        <item>Email: jasjot784@gmail.com</item>
+        <item>Email: shivangigoyal2705@gmail.com</item>
+        <item>Email: sparshgupta130799@gmail.com</item>
+        <item>Email: rahulmahawar07048@gmail.com</item>
+    </string-array>
+
+    <string-array name="images">
+        <item>@drawable/akhil</item>
+        <item>@drawable/jasjot</item>
+        <item>@drawable/shivangi</item>
+        <item>@drawable/sparsh</item>
+        <item>@drawable/rahul</item>
+    </string-array>
 </resources>
