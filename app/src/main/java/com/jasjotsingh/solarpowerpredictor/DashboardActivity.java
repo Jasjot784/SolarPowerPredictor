@@ -69,7 +69,8 @@ public class DashboardActivity extends AppCompatActivity implements View.OnClick
                         .startChooser();
                 break;
             case R.id.cardCompare:
-                displayToast("You clicked Compare");
+                Intent intentCompare = new Intent(DashboardActivity.this,CompareActivity.class);
+                startActivity(intentCompare);
                 break;
         }
     }
