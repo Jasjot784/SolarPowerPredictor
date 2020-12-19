@@ -9,7 +9,7 @@ import android.view.View;
 import android.widget.Toast;
 
 public class DashboardActivity extends AppCompatActivity implements View.OnClickListener {
-    CardView cardPredict,cardCompare,cardCall,card3;
+    CardView cardPredict,cardCompare,cardCall, cardShare;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -21,7 +21,7 @@ public class DashboardActivity extends AppCompatActivity implements View.OnClick
 
     public void listen(){
      cardPredict.setOnClickListener(this);
-     card3.setOnClickListener(this);
+     cardShare.setOnClickListener(this);
      cardCall.setOnClickListener(this);
      cardCompare.setOnClickListener(this);
     }
@@ -29,8 +29,8 @@ public class DashboardActivity extends AppCompatActivity implements View.OnClick
     public void init(){
         cardPredict = findViewById(R.id.cardPredict);
         cardCompare = findViewById(R.id.cardCompare);
-        cardCall = findViewById(R.id.cardCall);
-        card3 = findViewById(R.id.card3);
+        cardCall = findViewById(R.id.cardAbout);
+        cardShare = findViewById(R.id.cardShare);
     }
 
     @Override
@@ -40,11 +40,11 @@ public class DashboardActivity extends AppCompatActivity implements View.OnClick
                 Intent intent = new Intent(DashboardActivity.this,PredictActivity.class);
                 startActivity(intent);
                 break;
-            case R.id.cardCall:
-                displayToast("You clicked call");
+            case R.id.cardAbout:
+                displayToast("You clicked about");
                 break;
-            case R.id.card3:
-                displayToast("You clicked card3");
+            case R.id.cardShare:
+                displayToast("You clicked share");
                 break;
             case R.id.cardCompare:
                 displayToast("You clicked Compare");
